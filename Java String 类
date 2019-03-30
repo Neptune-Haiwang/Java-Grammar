@@ -1,0 +1,30 @@
+public class StringDemo{
+   public static void main(String args[]){
+      char[] helloArray = { 'r', 'u', 'n', 'o', 'o', 'b'};
+      String helloString = new String(helloArray);  
+      System.out.println( helloString );                    //输出：runoob
+   }
+   
+   
+   //char charAt(int index)：返回指定索引处的 char 值
+   //int compareTo(Object o)：把这个字符串和另一个对象比较
+   //int compareTo(String anotherString)：按字典顺序比较两个字符串
+   //int compareToIgnoreCase(String str)：按字典顺序比较两个字符串，不考虑大小写
+   
+   //String concat(String str)：将指定字符串连接到此字符串的结尾
+   //boolean contentEquals(StringBuffer sb)：当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真
+   //static String copyValueOf(char[] data, int offset, int count)：返回指定数组中表示该字符序列的 String
+   //boolean endsWith(String suffix)：测试此字符串是否以指定的后缀结束
+   
+   //int hashCode()：返回此字符串的哈希码
+   //int indexOf(int ch)：返回指定字符在此字符串中第一次出现处的索引
+   //int indexOf(String str)：返回指定子字符串在此字符串中第一次出现处的索引
+   //int length()：返回此字符串的长度
+   
+   //char[] toCharArray()：将此字符串转换为一个新的字符数组
+   //String substring(int beginIndex, int endIndex)：返回一个新字符串，它是此字符串的一个子字符串
+   //String toString()：返回此对象本身（它已经是一个字符串！
+   //String toLowerCase(Locale locale)：使用给定 Locale 的规则将此 String 中的所有字符都转换为小写
+   
+   
+}
