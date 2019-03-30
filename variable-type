@@ -1,7 +1,7 @@
 import java.io.*;
 public class Employee{
    
-   //salary是静态的私有变量(class variable)
+   //salary是静态的私有变量, 仅在该类可见(class variable)
    private static double salary;
    
    // DEPARTMENT是一个常量 
@@ -9,9 +9,6 @@ public class Employee{
    
    // 这个实例变量对子类可见 (instance variable)
    public String name;
-   
-   // 私有变量，仅在该类可见
-   private double salary;
    
    //在构造器中对name赋值 (constructor)
    public Employee (String empName){
