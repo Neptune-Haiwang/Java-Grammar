@@ -37,5 +37,26 @@ public class Test {
          System.out.print(",");
       }
       
+      //break关键字
+      int [] numbers = {10, 20, 30, 40, 50};
+      for(int x : numbers ) {
+         // x 等于 30 时跳出循环
+         if( x == 30 ) {
+            break;               // 最终只输出 10， 20
+         }
+         System.out.print( x );
+         System.out.print("\n");
+      }
+     
+      //continue 关键字
+      int [] numbers = {10, 20, 30, 40, 50};
+      for(int x : numbers ) {
+         if( x == 30 ) {
+        continue;               //最终只输出 10，20，40，50
+         }
+         System.out.print( x );
+         System.out.print("\n");
+      }
+      
    }
 }
