@@ -16,8 +16,17 @@ public class Test {
     }
     
     private static void test(double num) {   
-    System.out.println("Math.floor(" + num + ")=" + Math.floor(num));   //向下取整， 1.4变1.0
-    System.out.println("Math.round(" + num + ")=" + Math.round(num));   //四舍五入，算法为 Math.floor(x+0.5)，1.4变1
-    System.out.println("Math.ceil(" + num + ")=" + Math.ceil(num));     //向上取整，双精度浮点型，1.4变2.0
-  } 
+        System.out.println("Math.floor(" + num + ")=" + Math.floor(num));   //向下取整， 1.4变1.0
+        System.out.println("Math.round(" + num + ")=" + Math.round(num));   //四舍五入，算法为 Math.floor(x+0.5)，1.4变1
+        System.out.println("Math.ceil(" + num + ")=" + Math.ceil(num));     //向上取整，双精度浮点型，1.4变2.0
+    }
+    
+    
+    //xxxValue()：将 Number 对象转换为xxx数据类型的值并返回
+    //compareTo()： 将number对象与参数比较
+    //equals()：判断number对象是否与参数相等
+    //valueOf()：返回一个 Number 对象指定的内置数据类型
+    //toString()：以字符串形式返回值
+    //parseInt()： 将字符串解析为int类型
+    //random()：返回一个随机数
 }
