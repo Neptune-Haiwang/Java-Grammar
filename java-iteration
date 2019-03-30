@@ -1,0 +1,41 @@
+public class Test {
+   public static void main(String args[]) {
+      
+      //while循环
+      int x = 10;
+      while( x < 20 ) {
+         System.out.print("value of x : " + x );
+         x++;
+         System.out.print("\n");
+      }
+      
+      //do while 循环
+      int x1 = 10;
+      do{
+         System.out.print("value of x1 : " + x1 );
+         x1++;
+         System.out.print("\n");
+      }while( x1 < 20 );
+      　
+      //for循环 
+      for(int x2 = 10; x2 < 20; x2 = x2+1) {
+         System.out.print("value of x2 : " + x2 );
+         System.out.print("\n");
+      }
+      
+      //for-each循环，增强for循环
+      int [] numbers = {10, 20, 30, 40, 50};
+ 
+      for(int x3 : numbers ){
+         System.out.print( x3 );
+         System.out.print(",");
+      }
+      System.out.print("\n");
+      String [] names ={"James", "Larry", "Tom", "Lacy"};
+      for( String name : names ) {
+         System.out.print( name );
+         System.out.print(",");
+      }
+      
+   }
+}
