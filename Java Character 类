@@ -1,1 +1,28 @@
-
+public class Test {
+ 
+   public static void main(String args[]) {
+      System.out.println("访问\"菜鸟教程!\"");
+      
+      char ch = 'a';
+ 
+      // Unicode 字符表示形式
+      char uniChar = '\u039A'; 
+ 
+      // 字符数组
+      char[] charArray ={ 'a', 'b', 'c', 'd', 'e' };
+      
+      // 原始字符 'a' 装箱到 Character 对象 ch 中
+      Character ch = 'a';
+ 
+      // 原始字符 'x' 用 test 方法装箱
+      // 返回拆箱的值到 'c'
+      char c = test('x');
+      
+      
+      
+      //isLetter()：是否是一个字母
+      //isUpperCase()： 是否是大写字母
+      //toUpperCase()：指定字母的大写形式
+      //toString()：返回字符的字符串形式，字符串的长度仅为1
+  }
+}
