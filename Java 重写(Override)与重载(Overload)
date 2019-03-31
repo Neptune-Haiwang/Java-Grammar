@@ -1,0 +1,68 @@
+//重写(Override)
+
+class Animal{
+   public void move(){
+      System.out.println("动物可以移动");
+   }
+}
+ 
+class Dog extends Animal{
+   public void move(){
+      System.out.println("狗可以跑和走");
+   }
+}
+ 
+public class TestDog{
+   public static void main(String args[]){
+      Animal a = new Animal(); // Animal 对象
+      Animal b = new Dog(); // Dog 对象
+ 
+      a.move();// 执行 Animal 类的方法
+ 
+      b.move();//执行 Dog 类的方法
+   }
+}
+/*输出：
+  动物可以移动
+  狗可以跑和走
+*/
+
+//重载(Overload)
+public class Overloading {
+    public int test(){
+        System.out.println("test1");
+        return 1;
+    }
+ 
+    public void test(int a){
+        System.out.println("test2");
+    }   
+ 
+    //以下两个参数类型顺序不同
+    public String test(int a,String s){
+        System.out.println("test3");
+        return "returntest3";
+    }   
+ 
+    public String test(String s,int a){
+        System.out.println("test4");
+        return "returntest4";
+    }   
+ 
+    public static void main(String[] args){
+        Overloading o = new Overloading();
+        System.out.println(o.test());
+        o.test(1);
+        System.out.println(o.test(1,"test3"));
+        System.out.println(o.test("test4",1));
+    }
+}
+
+/*
+  方法的重写(Overriding)和重载(Overloading)是java多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。
+  (1)方法重载是一个类中定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同,则称为方法的重载(Overloading)。
+  (2)方法重写是在子类存在方法与父类的方法的名字相同,而且参数的个数与类型一样,返回值也一样的方法,就称为重写(Overriding)。
+  (3)方法重载是一个类的多态性表现,而方法重写是子类与父类的一种多态性表现。
+*/
+
+
