@@ -1,0 +1,78 @@
+/*方法的命名规则
+  1.方法的名字的第一个单词应以小写字母作为开头，后面的单词则用大写字母开头写，不使用连接符。例如：addPerson。
+  2.下划线可能出现在 JUnit 测试方法名称中用以分隔名称的逻辑组件。一个典型的模式是：test<MethodUnderTest>_<state>，例如 testPop_emptyStack
+*/  
+
+
+//方法的定义
+/** 返回两个整型变量数据的较大值 */
+public static int max(int num1, int num2) {
+   int result;
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+
+//方法调用
+public class TestMax {
+   /** 主方法 */
+   public static void main(String[] args) {
+      int i = 5;
+      int j = 2;
+      int k = max(i, j);
+      System.out.println( i + " 和 " + j + " 比较，最大值是：" + k);
+   }
+ 
+   /** 返回两个整数变量较大的值 */
+   public static int max(int num1, int num2) {
+      int result;
+      if (num1 > num2)
+         result = num1;
+      else
+         result = num2;
+ 
+      return result; 
+   }
+}
+
+//通过值传递参数
+public static void nPrintln(String message, int n) {
+  for (int i = 0; i < n; i++) {
+    System.out.println(message);
+  }
+}
+
+//方法的重载
+/*
+  如果你调用max方法时传递的是int型参数，则 int型参数的max方法就会被调用；
+  如果传递的是double型参数，则double类型的max方法体会被调用，这叫做方法重载；
+  就是说一个类的两个方法拥有相同的名字，但是有不同的参数列表。
+*/
+public static double max(double num1, double num2) {
+  if (num1 > num2)
+    return num1;
+  else
+    return num2;
+}
+
+//构造方法
+// 一个简单的构造函数
+class MyClass {
+  int x;
+ 
+  // 以下是构造函数
+  MyClass(int i ) {
+    x = i;
+  }
+}
+
+public class ConsDemo {
+  public static void main(String args[]) {
+    MyClass t1 = new MyClass( 10 );
+    MyClass t2 = new MyClass( 20 );
+    System.out.println(t1.x + " " + t2.x);
+  }
+}
